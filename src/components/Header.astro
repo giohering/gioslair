@@ -29,8 +29,10 @@ import IconLink from "./react/IconLink";
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		/* CHANGE: Replaced 'white' with a dark color from your theme */
+		background: #1f2937;
+		/* CHANGE: Replaced the light-theme shadow with a subtle border */
+		border-bottom: 1px solid rgb(var(--gray-light));
 	}
 	h2 {
 		margin: 0;
@@ -48,12 +50,14 @@ import IconLink from "./react/IconLink";
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		/* This correctly uses your light text color variable */
+		color: rgb(var(--black));
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
 		text-decoration: none;
+		/* This correctly uses your orange accent color variable */
 		border-bottom-color: var(--accent);
 	}
 	.social-links,
