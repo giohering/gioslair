@@ -5,8 +5,19 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import tinaDirective from "./astro-tina-directive/register"
 
+import { defineConfig } from 'astro/config';
+
+
 // https://astro.build/config
 export default defineConfig({
 	site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
 	integrations: [mdx(), sitemap(), react(), tinaDirective()],
+	  markdown: {
+    shikiConfig: {
+      themes: {
+        light: 'github-light',
+        dark: 'github-dark',
+      },
+    },
+  },
 });
