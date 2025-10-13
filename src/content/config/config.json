@@ -18,8 +18,8 @@
       "link": "/about"
     },
     {
-      "title": "Educational",
-      "link": "https://gioslair.vercel.app/education"
+      "title": "Education",
+      "link": "/education"
     }
   ],
   "contactLinks": [
