@@ -16,6 +16,10 @@
     {
       "title": "About",
       "link": "/about"
+    },
+    {
+      "title": "Educational",
+      "link": "https://gioslair.vercel.app/education"
     }
   ],
   "contactLinks": [
