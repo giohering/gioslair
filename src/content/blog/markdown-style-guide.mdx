@@ -1,5 +1,5 @@
 ---
-title: Markdown Style Guide
+title: Some fundamentals on near infrared spectroscopy
 description: >-
   Here is a sample of some basic Markdown syntax that can be used when writing
   Markdown content in Astro.
@@ -7,23 +7,23 @@ pubDate: 2024-06-18T14:00:00.000Z
 heroImage: ''
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+During my Masters (and undergrad) - I was lucky enough to have worked for and alongside people who were very rigorous when it comes to the physics of Biomedical Optics.
 
-## Headings
+On this first ever post on my website - I want to invite you to read a very briefly edited version of the second chapter of my Master's Thesis. It is probably the only chapter that I would not completely overhaul were I to rewrite it. It is a rather long post but I hope it contributes to people's understanding of fNIRS. It does have quite some equations, but is built on the work of giants and pioneers in the field such as Arjun Yodh, Britton Chance, Simon Arridge and so many others (check references).
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Without further stalling, lets dive into the basis of near-infrared spectroscopy (NIRS) measurements. We will investigate how to extract information from light propagation in biological tissue. To this goal, I will briefly discuss the relevant light-tissue interactions. Then, I will present the hypotheses and solutions for fundamental equations in NIRS applications, and translate the solutions into the desired information from biological tissue.
 
-# H1
+## Principles of light-tissue interactions
 
-## H2
+There are several types of possible photon interactions in a given medium. For this work, since the radiation of interest is low power and in the near-infrared range (i.e., low energy), two main types of interactions are relevant: absorption and elastic scattering. In this limit, as will be shown in more detail when the hypotheses are presented, light can be treated as rays quantified by intensity and a direction of propagation. When light is absorbed, the beam intensity is attenuated but its initial propagation direction is unchanged. On the other hand, when light is scattered its beam intensity is unchanged but its initial propagation direction can be changed. Figure (fig\:absesp) shows an illustrative example of both interactions.
 
-### H3
+An absorption event triggers an excitation of one molecule in the medium that does not result in a re-emitted photon. In this type of event, specific molecules can be brought to vibrational or rotational states of higher energy by interacting with photons. This energy is then dissipated as heat through collisions with other particles in the medium in a period shorter than its relaxation time, so that a photon is not re-emitted. The absorption coefficient (μa) can describe these events statistically -- or macroscopically. Physically, the absorption coefficient measures the number of absorption events per unit length in a given medium. It is a function of wavelength, position inside the medium (for non-homogeneous media) and time. Since # $$ \mu\_a $$ describes a probability density (over distance), it is possible to determine an estimate of the mean distance that photons travel in a medium before they are absorbed. This estimate is done by describing the incident light as composed of N
 
-#### H4
+0
 
-##### H5
+​
 
-###### H6
+photons propagating in a specific direction inside the medium. Let N(r) quantify the number of photons that were not absorbed after travelling a distance r in the medium. Then, the number of photons lost over r+dr is given by the following differential equation:
 
 ## Paragraph
 
