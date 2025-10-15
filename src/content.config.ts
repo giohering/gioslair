@@ -93,4 +93,4 @@ const page = defineCollection({
     body: z.any(),
   }),
 })
-export const collections = { blog, page };
+export const collections = { blog, page, education};
