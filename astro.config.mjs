@@ -21,13 +21,15 @@ export default defineConfig({
       // and then import them at the top of this file.
     ],
     rehypePlugins: [rehypeKatex],
-    shikiConfig: {
-      // For more themes, visit https://shiki.style/themes
-      themes: {
-        light: 'github-light',
-        dark: 'github-dark',
-      },
-      wrap: false,
+  },
+  // Moved shikiConfig to the top level, outside of the markdown object.
+  shikiConfig: {
+    // For more themes, visit https://shiki.style/themes
+    themes: {
+      light: 'github-light',
+      dark: 'github-dark',
     },
+    wrap: false,
   },
 });
+
