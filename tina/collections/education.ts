@@ -8,7 +8,7 @@ export const EduCollection: Collection = {
   format: "mdx",
   ui: {
     router({ document }) {
-      return `/education/${document._sys.filename}`;
+      return `/${document._sys.filename}`;
     },
   },
   fields: [
