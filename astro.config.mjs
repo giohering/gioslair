@@ -13,7 +13,7 @@ import rehypeKatex from 'rehype-katex';
 export default defineConfig({
   site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
   integrations: [
-    mdx({
+    markdown({
       // MDX plugins are configured here, inside the mdx() integration
       remarkPlugins: [remarkMath],
       rehypePlugins: [rehypeKatex],
