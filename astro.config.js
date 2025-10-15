@@ -12,17 +12,16 @@ import rehypeKatex from 'rehype-katex';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
-  integrations: [mdx(), sitemap(), react(), tinaDirective()],
-  markdown: {
-    remarkPlugins: [
-      remarkMath,
-      // NOTE: remarkToc and remarkCollapse were removed because they were not imported.
-      // To use them, you must first install them (e.g., `npm install remark-toc`)
-      // and then import them at the top of this file.
-    ],
-    rehypePlugins: [rehypeKatex],
-  },
-  // Moved shikiConfig to the top level, outside of the markdown object.
+  integrations: [
+    mdx({
+      // MDX plugins are configured here, inside the mdx() integration
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
+    sitemap(),
+    react(),
+    tinaDirective()
+  ],
   shikiConfig: {
     // For more themes, visit https://shiki.style/themes
     themes: {
