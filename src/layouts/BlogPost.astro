@@ -12,6 +12,14 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+
+		<!-- Added scripts for theme toggling and KaTeX math rendering -->
+		<script is:inline src="/toggle-theme.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+		/>
+
 		<style>
 			main {
 				width: calc(100% - 2em);
