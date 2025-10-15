@@ -1,6 +1,6 @@
 import type { Collection } from "tinacms";
 
-export const BlogCollection: Collection = {
+export const EduCollection: Collection = {
 
   name: "education",
   label: "education posts",
@@ -8,7 +8,7 @@ export const BlogCollection: Collection = {
   format: "mdx",
   ui: {
     router({ document }) {
-      return `/blog/${document._sys.filename}`;
+      return `/education/${document._sys.filename}`;
     },
   },
   fields: [
